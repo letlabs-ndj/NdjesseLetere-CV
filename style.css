@@ -1,0 +1,342 @@
+@font-face {
+    font-family: police_primary;
+    src: url(./fonts/OpenSans-Regular.ttf);
+}
+*{
+    font-family: police_primary;
+}
+:root{
+    --primary:#00498e;
+    --secondary:353438;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 5px 10px 0 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*navbar Styling*/
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #00203f;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 5px;
+}
+
+.nav-element-container{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+}
+
+.nav-element-container .nav-element{
+    color: #f8f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: police_primary;
+}
+
+.nav-element:hover{
+    color: var(--primary);
+    background-color: #f8f2f2;
+    font-weight: bold;
+    transition: 0.2s ease-out;
+}
+.nav-element:focus{
+    color: var(--primary);
+    background-color: #f8f2f2;
+    font-weight: bold;
+    transition: 0.2s ease-out;
+}
+
+/*navbar Styling finished*/
+
+
+
+/* Header Styling */
+.container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: 100%;    
+    opacity: 1;
+  }
+  
+  .middle {
+    opacity: 1;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .circle-avatar{
+    
+  }
+
+  .description{
+    margin: 10px;
+    font-family: police_primary;
+    color: white;
+  }
+  .name{
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .photo-profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  /* Header Styling finished*/
+  
+
+   /* about section styling*/
+   section,footer{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+   }
+   .sector{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+   }
+   .title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+   }
+   .sector-content-container{
+    width: 70%;
+   }
+   .uncolored-sector{
+    background-color: white;
+    color: var(--secondary)
+   }
+   
+   .colored-sector{
+    background-color: var(--primary);
+    color: #f6f5fc;
+   }
+   
+   .text{
+    font-size: 16px;
+   }
+   .about-text{
+    text-align: justify;
+   }
+
+   .bio{
+    
+   }
+   .bio{
+    
+   }
+   .list{
+    width: 80%;
+   }
+   .list-element p{
+    display: inline;
+    text-align: center;
+   }
+
+   i{
+    margin: 5px;
+   }
+   
+   .list-element{
+    margin: 10px;
+   }
+   .bio-icon{
+    color: var(--primary);
+   }
+   .bio-list > .list-element{
+    display: flex;
+    align-items: center;
+   }
+    /* about section styling finished*/
+
+    /* skill section styling*/
+
+    .progress{
+        border: none;
+        background-color: #c5bfbf;
+        border-radius: 30px;
+        height: 5px;
+    }
+    .progress-accent{
+        border-radius: 30px;
+        height: 100%;
+    }
+    .progress-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .skill-value{
+        display: flex;
+        align-items: center;
+    }
+    .skill-text{
+        font-style: italic;
+        font-weight: bold;
+    }
+    .hobbies-list .list-element{
+        display: flex;
+        align-items: center;
+    }
+    /* skill section styling finished*/
+
+
+    /* experience styling section*/
+    #exp{
+        margin-top: 65px;
+    }
+    .exp-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .exp-value { 
+        font-size: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px;
+    }
+    .exp-text{
+        text-align: center;
+        font-weight: bold;
+    }
+    .exp-icon{
+        color: var(--primary);
+    }
+  
+    hr{
+        background-color: var(--primary);
+        border: solid var(--primary);
+        width: 70%;
+    }
+  
+    /* experience section styling finished*/
+
+    /* contact-me section styling*/
+    .contact-me-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .submit-btn-container{
+        display: flex;
+        justify-content: end;
+    }
+    .submit-btn{
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+        background-color: white;
+    }
+    .contact-me{
+        border-radius: 30px;
+    }
+   
+    /* contact-me section styling finished*/
+
+    /*footer styling*/
+    footer{
+        background-color: #00203f;
+        color: white;
+    }
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-list .list-element{
+        display: flex;
+        margin: 0;
+        color: aqua;
+    }
+    .social-media{
+        display: flex;
+        justify-content: space-around;
+    }
+    .social-media a{
+        text-decoration: none;
+        color: aqua;
+    }
+    .rights{
+        font-size: 12px;
+        font-style: italic;
+    }
+    .footer-icon{
+        color: var(--secondary);
+    }
+    /*footer styling finished*/
+    @media only screen and (max-width: 1000px) {
+        .photo-profile{
+            width: 100px;
+            height: 100px;            
+            margin: 5px;
+          }
+        .nav-element-container .nav-element{            
+            font-size: 90%;
+        }
+        @media only screen and (max-width: 600px) {
+            section {
+              flex-wrap: wrap;
+              flex-direction: column;
+              align-items: center;
+            }
+            .sector{
+                width: 100%;
+              }
+            .text {
+                font-size: 13px;
+              }
+            .exp-text {
+                font-size: 17px;
+              }  
+            .title , .name{
+                font-size: 25px;
+                margin-bottom: 5px;
+              } 
+            .name{
+                font-size: 25px;
+              }    
+          }  
+      }
